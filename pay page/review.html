@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="parview.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="home">
+        <div class="home-container">
+            <div class="outer">
+               <div class="left"> 
+                    <form action="" method="post">
+                        <div class="inputBox">
+                            <div class="card-number">
+                                <p>CARDHOLDER NAME</p>
+                                <!-- <span>enter name</span> -->
+                            </div>
+                            <div class="input">
+                                <input type="text" id="card-name" autocomplete="off" required>
+                            </div>
+                            <div class="card-cvv">
+                                <div class="text">
+                                    <p>CARD NUMBER</p>
+                                </div>
+                                <div class="input">
+                                    <input type="number" data-maxlength="4" required oninput="this.value=this.value.slide(0,this.dataset.maxlength)" />
+                                </div>
+                            </div>
+                            <div class="flexbox">
+                                <div class="card-expiration">
+                                    <div class="text">
+                                        <p>EXP. DATE (MM/YY)</p>
+                                    </div>
+                                    <div class="input">
+                                        <input type="number" id="exp-month" placeholder="mm" data-maxlength="1" required oninput="this.value=this.value.slide(0,this.dataset.maxlength)" />
+                                        <strong>  </strong>
+                                        <input type="number" id="exp-month" placeholder="yy" data-maxlength="1" required oninput="this.value=this.value.slide(0,this.dataset.maxlength)" />
+                                        <!-- <input type="number" id="cvc-input" placeholder="cvc" data-maxlength="2" required oninput="this.value=this.value.slide(0,this.dataset.maxlength)" /> -->
+                                    </div>
+                            </div>
+                                </div>
+                            <div class="right">
+                                <p>CVC</p>
+                                <!-- <span class="last-digit" id="card-number">eg 123</span> -->
+                                <input type="text" maxlength="" class="cvc-input">
+                            </div>
+                        </div>
+                        <input type="submit" value="confirm" class="sunbmit-btn">
+                        <!-- <button>Confirm</button> -->
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </section>      
+</body>
+</html>
